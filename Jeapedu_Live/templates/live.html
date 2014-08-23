@@ -1,0 +1,474 @@
+{% extends "base.html" %}
+{% block content%}  
+			
+			<div class="inner-page">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<!-- Inner Page Content Sidebar -->
+							<div class="page-sidebar">
+								<!-- Page Title -->
+								<div class="page-title br-orange">
+									<!-- Inner Page Title // Heading -->
+									<h2>客服热线</h2>
+									<!-- Paragraph -->
+									<p>{{ind.help|safe}}</p>
+									
+									<a href="#" class="btn btn-info">点我咨询 <i class="fa fa-angle-right"></i></a>&nbsp;
+									<a class="btn btn-default">Tel: 010-62231977</a>
+								</div>
+								<!-- Sidebar Links -->
+								<div class="sidebar-link col-disable">
+									<!-- Search Box -->
+									<div class="search">
+										<form>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="Text to search">
+												<span class="input-group-btn">
+													<button class="btn" type="button"><i class="fa fa-search"></i></button>
+												</span>
+											</div>
+										</form>
+									</div>
+									<ul class="list-unstyled">
+										<li><a href="index.html" class="animated">{{ind.placement|safe}} <i class="fa fa-angle-double-right"></i></a></li>
+										<li><a href="aboutus.html" class="animated">2014年9月12日 -> Django五人班 <i class="fa fa-angle-double-right"></i></a></li>
+										<li><a href="feature.html" class="animated">2014年9月6日 -> CSS五人班 <i class="fa fa-angle-double-right"></i></a></li>
+										<li><a href="coming-soon.html" class="animated">2014年9月4日 -> MySQL五人班 <i class="fa fa-angle-double-right"></i></a></li>
+										<li><a href="service.html" class="animated">2014年9月1日 -> iOS三人班 <i class="fa fa-angle-double-right"></i></a></li>
+										<li><a href="feature.html" class="animated">2014年8月26日 -> CSS五人班 <i class="fa fa-angle-double-right"></i></a></li>
+										<li><a href="coming-soon.html" class="animated">2014年8月16日 -> MySQL五人班 <i class="fa fa-angle-double-right"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Main-bar Column -->
+						<div class="col-md-9">
+							<div class="page-mainbar feature">
+								<!-- Heading -->
+								<h3>直播流程</h3>
+								<!-- Feature Content -->
+								<div class="feature-content">
+									<!-- Paragraph -->
+									<p class="grey">{{liv.liv_remarks|safe}}</p>
+									<div class="row">
+										<div class="col-md-4 col-sm-4">
+											<!-- Feature Content Item -->
+											<div class="feature-item br-red">
+												<!-- Flat Icon -->
+												<img src="static/img/flat-icon/fi4.png" class="img-responsive" alt="" />
+												<!-- Heading -->
+												<h4><a href="#">即将直播</a></h4>
+												<!-- Paragraph -->
+												<p>{{liv.upc_content|safe}}</p>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<!-- Feature Content Item -->
+											<div class="feature-item br-lblue">
+												<!-- Flat Icon -->
+												<img src="static/img/flat-icon/fi5.png" class="img-responsive" alt="" />
+												<!-- Heading -->
+												<h4><a href="#">正在直播</a></h4>
+												<!-- Paragraph -->
+												<p>{{liv.bei_content|safe}}</p>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<!-- Feature Content Item -->
+											<div class="feature-item br-green">
+												<!-- Flat Icon -->
+												<img src="static/img/flat-icon/fi1.png" class="img-responsive" alt="" />
+												<!-- Heading -->
+												<h4><a href="#">已经直播</a></h4>
+												<!-- Paragraph -->
+												<p>{{liv.has_content|safe}}</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Heading -->
+								<h3>往期直播视频</h3>
+								<!-- Feature Details -->
+
+
+
+											<div class="container">
+			<div class="inner-page">
+				<div class="container">
+					<div class="page-mainbar column-index">
+						<!-- Masonry Container -->
+						<div id="container" class="grid">
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-yellow animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall01.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>{{ind.courses|safe}}</h2>
+										<!-- Paragraph -->
+										<p>{{liv.mov_remarks|safe}}</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-green animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall02.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>Uliweb</h2>
+										<!-- Paragraph -->
+										<p>课程简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-lblue animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall03.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>Django</h2>
+										<!-- Paragraph -->
+										<p>课程简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-orange animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall04.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>JS</h2>
+										<!-- Paragraph -->
+										<p>课程简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-red animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall05.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>CSS</h2>
+										<!-- Paragraph -->
+										<p>课程简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-yellow animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall06.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>iOS</h2>
+										<!-- Paragraph -->
+										<p>课程简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-blue animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall07.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>MySQL</h2>
+										<!-- Paragraph -->
+										<p>课程简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-purple animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall08.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>REQUEST</h2>
+										<!-- Paragraph -->
+										<p>课程简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-green animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall09.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>NODEJS</h2>
+										<!-- Paragraph -->
+										<p>课程简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-yellow animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall10.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>Django</h2>
+										<!-- Paragraph -->
+										<p>课程简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid Item -->
+							<div class="item">
+								<!-- Entry for each grid -->
+								<div class="grid-entry br-purple animated">
+									<!-- Grid Image Container -->
+									<div class="grid-img">
+										<!-- Image -->
+										<img src="static/img/grid-wall/wall11.png" class="img-responsive" alt="" />
+										<!-- Grid Image Hover Effect -->
+										<span class="grid-img-hover"></span>
+										<!-- Grid Image Hover Icon -->
+										<a href="static/img/grid-wall/wall01.png" class="grid-img-link">
+											<i style="font-size:15px;" class="fa fa-search-plus hover-icon icon-left">播放</i>
+										</a>
+										<a href="#">
+											<i style="font-size:15px;" class="fa fa-link hover-icon icon-right">下载</i>
+										</a>
+									</div>
+									<!-- Grid entry information -->
+									<div class="entry-info">
+										<!-- Heading -->
+										<h2>JS</h2>
+										<!-- Paragraph -->
+										<p>课程简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+										<!-- Share Block -->
+										<div class="share">
+											<span>2385<a href="#" class="my-tooltip" title="" data-placement="right" data-original-title="Share"><i class="fa fa-share"></i></a></span>
+											<span>61<i class="fa fa-star-half-o"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Inner Page Content // End -->
+
+									
+									
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+{%endblock%}
