@@ -32,7 +32,15 @@ class ReadyAdmin(admin.ModelAdmin):
     class Media:
 	js=("http://tinymce.cachefly.net/4.1/tinymce.min.js","/static/js/tiny.js",)
 
+class TextInfoAdmin(admin.ModelAdmin):
+    list_display =('text',)
+    class Media:
+	js=("http://tinymce.cachefly.net/4.1/tinymce.min.js","/static/js/tiny.js",)
 
+class ImgInfoAdmin(admin.ModelAdmin):
+    list_display =('image_tag','tagname',)
+    class Media:
+	js=("http://tinymce.cachefly.net/4.1/tinymce.min.js","/static/js/tiny.js",)
 
 admin.site.register(Index,IndexAdmin)
 admin.site.register(Courses,CoursesAdmin)
@@ -40,3 +48,5 @@ admin.site.register(Student,StudentAdmin)
 admin.site.register(Taped,TapedAdmin)
 admin.site.register(Live,LiveAdmin)
 admin.site.register(Ready,ReadyAdmin)
+admin.site.register(TextInfo,TextInfoAdmin)
+admin.site.register(ImgInfo,ImgInfoAdmin)
